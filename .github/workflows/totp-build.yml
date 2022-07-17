@@ -22,4 +22,4 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: totp_upload
-        path: .libs/pw-totp.*
+        path: contrib/slapd-modules/passwd/totp/.libs/pw-totp.*
