@@ -19,3 +19,7 @@ jobs:
       run: make
     - name: totp build
       run: cd contrib/slapd-modules/passwd/totp && make
+    - uses: actions/upload-artifact@v3
+      with:
+        name: totp_upload
+        path: .libs/pw-totp.*
